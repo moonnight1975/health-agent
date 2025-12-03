@@ -1,40 +1,51 @@
-# Health Assist Avatar
+# 🌿 Health Assist Avatar
 
-A personal health companion web application.
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![Supabase](https://img.shields.io/badge/Supabase-Postgres-green?style=for-the-badge&logo=supabase)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-blue?style=for-the-badge&logo=tailwindcss)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)
 
-## Setup
+**A modern, AI-powered personal health dashboard built with Next.js 16, Supabase, and TailwindCSS.**
 
-1. **Environment Variables**
-   Copy `env.example` to `.env.local` and add your Supabase credentials:
-   ```bash
-   cp env.example .env.local
-   ```
-   Update `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
+Health Assist Avatar is designed to be your daily wellness companion. It tracks your steps, water intake, sleep, and mood while providing medication reminders—all supported by an interactive Health Assistant Chatbot. The project emphasizes a "Glassmorphic" aesthetic, fluid Framer Motion animations, and a developer-friendly architecture.
 
-2. **Database Setup**
-   Run the SQL commands in `supabase/schema.sql` in your Supabase project's SQL Editor to create the tables and policies.
+---
 
-3. **Install Dependencies**
-   ```bash
-   npm install
-   ```
+## ✨ Key Features
 
-4. **Run Development Server**
-   ```bash
-   npm run dev
-   ```
+### 📊 Interactive Health Dashboard
+* **Vital Stats:** Real-time tracking cards for Steps, Water, Sleep, and Mood.
+* **Data Visualization:** Beautiful weekly activity charts using **Recharts**.
+* **Mood Tracker:** Lottie-powered animated icons that reflect your current state.
+* **Modern UI:** Clean, glass-panel design with vibrant gradient enhancements.
 
-## Features
+### 💬 AI Health Assistant
+* **Floating Action Button (FAB):** Non-intrusive chat interface.
+* **Slide-in Panel:** Smooth transitions for the chat window.
+* **Persistent History:** User & assistant conversations stored in Supabase.
+* **Pluggable Architecture:** Ready to connect with OpenAI, Gemini, or local LLMs.
 
-- **Authentication**: Email/Password login & signup via Supabase.
-- **Dashboard**: Track steps, water, sleep, mood, and medications.
-- **Chat Assistant**: AI health assistant (mocked) with streaming response.
-- **Demo Data**: "Load Demo Data" button in Dashboard to populate metrics.
+### 💊 Medication Manager
+* **Reminders:** View upcoming medication schedules.
+* **Status Tracking:** Mark pills as "Taken" or "Skipped" via API.
+* **Visuals:** Custom animated pill icons for better UX.
 
-## Tech Stack
+### 🎨 Fully Animated Experience
+* **Framer Motion:** Page transitions, card hover effects, and slide-overs.
+* **Lottie Files:** High-quality vector animations for empty states and mood tracking.
 
-- Next.js 14 (App Router)
-- Tailwind CSS
-- ShadCN UI
-- Supabase (Auth & DB)
-- React Query
+---
+
+##  Tech Stack
+
+| Category | Technology |
+| :--- | :--- |
+| **Framework** | Next.js 16 (App Router, Turbopack) |
+| **Language** | TypeScript / React 18 |
+| **Styling** | TailwindCSS, Lucide Icons |
+| **Animation** | Framer Motion, Lottie React |
+| **Charts** | Recharts |
+| **Backend & Auth** | Supabase (Postgres, Auth, Realtime) |
+| **Deployment** | Vercel |
+
+link:https://health-agent-lhkj-mm2xgee78-litto-biju-pappachans-projects.vercel.app
